@@ -1,0 +1,63 @@
+@layer base {
+  body {
+    background-color: var(--color-primary-900, var(--color-black));
+    color: var(--color-text-base, var(--color-primary-50, var(--color-white)));
+    overscroll-behavior: contain;
+    unicode-bidi: isolate;
+    letter-spacing: normal;
+    word-spacing: normal;
+    min-height: 100vh;
+  }
+
+  .font-fa,
+  [lang="fa"] {
+    font-family: "Vazirmatn", var(--font-sans);
+    direction: rtl;
+    --animate-fade-l-space: calc(var(--spacing) * -6);
+    --animate-fade-r-space: calc(var(--spacing) * 6);
+  }
+
+  .font-en,
+  [lang="en"] {
+    font-family: "FiraCode", var(--font-sans);
+    direction: ltr;
+    --animate-fade-l-space: calc(var(--spacing) * 6);
+    --animate-fade-r-space: calc(var(--spacing) * -6);
+  }
+
+  .custom-scrollbar {
+    @apply scrollbar-thin
+          scrollbar-thumb-primary-500 scrollbar-track-transparent
+          scrollbar-hover:scrollbar-thumb-primary-400 scrollbar-active:scrollbar-thumb-primary-300;
+  }
+
+  .bg-blurs {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -10;
+      pointer-events: none;
+      width: 100%;
+      max-width: 72rem;
+      left: 0;
+      top: -16rem;
+      bottom: 0;
+      background-color: transparent;
+      background-image: url("../assets/imgs/backgroundBlurs.svg");
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-position-y: top;
+      background-size: cover;
+      mix-blend-mode: screen;
+      animation-duration: 8s !important;
+
+      @apply select-none lg:[background-position-x:right] lg:-top-48 blur-lg animate-pulse;
+    }
+  }
+}
+
+@utility animation-delay-* {
+  animation-delay: --value([ *]);
+}

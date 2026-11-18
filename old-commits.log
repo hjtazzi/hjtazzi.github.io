@@ -1,0 +1,65 @@
+commit 767e9f6a5bb8496e89790e6f8935388727e079b1 (HEAD -> main, origin/main, origin/HEAD)
+Author: Hojjat Azizi <hjtazzi@gmail.com>
+Date:   Sat Nov 29 00:59:07 2025 +0330
+
+    Fix date function errors and other edits... build v1.0.2
+
+commit 4f7a920ca1ec3561be0c8b61773a69c237fa7c52
+Author: Hojjat Azizi <hjtazzi@gmail.com>
+Date:   Mon Nov 24 23:38:16 2025 +0330
+
+    Fix Persian font and mobile menu bugs. build v1.0.1
+
+commit b33ca47b9be6dea36678e0d2498541b8074af1d7
+Author: Hojjat Azizi <hjtazzi@gmail.com>
+Date:   Mon Nov 24 18:34:51 2025 +0330
+
+    Add AboutMe page animations and dates, and other edits... build v1.0.0
+
+commit c474cc2f3e91b3fa7c0e325342400b8350b5b708
+Author: Hojjat Azizi <hjtazzi@gmail.com>
+Date:   Thu Nov 20 19:33:27 2025 +0330
+
+    AboutMe page completed. other edits... build v0.3.0
+
+commit df7d81934f1d1dc6b6c2564168349c69bd7947c3
+Author: Hojjat Azizi <hjtazzi@gmail.com>
+Date:   Tue Nov 11 01:42:32 2025 +0330
+
+    Added particle system to the Home page. build v0.2.0
+
+commit 612158466bc3f59fe651a279a2567d863c70fb19
+Author: Hojjat Azizi <hjtazzi@gmail.com>
+Date:   Sat Nov 8 18:53:23 2025 +0330
+
+    ContactMe page completed. Edit spacing, animations and other edits...
+
+commit c1a771fda6496f8c3ec9b91e839e0e76e4265820
+Author: Hojjat Azizi <hjtazzi@gmail.com>
+Date:   Thu Nov 6 04:25:30 2025 +0330
+
+    Home page completed. Add bundle visualizer and manualChunks. and other edits... build v0.1.0
+
+commit f3cd66887fab5af6cea1d5fca6ddbab3f130e6b5
+Author: Hojjat Azizi <hjtazzi@gmail.com>
+Date:   Tue Nov 4 05:10:13 2025 +0330
+
+    config app. add layouts and shared components.
+
+commit 7bc0ad1d650b3e503a4fb3443447733b3766a49c
+Author: Hojjat Azizi <hjtazzi@gmail.com>
+Date:   Tue Oct 28 02:21:57 2025 +0330
+
+    update pkgs, add icon and meta tags.
+
+commit c36e8378d86c57df5da55053863697b7691af5fe
+Author: Hojjat Azizi <hjtazzi@gmail.com>
+Date:   Sun Oct 26 20:50:13 2025 +0330
+
+    add colors and fonts
+
+commit dcb1ccb786d921b6f1c253e68d44e2ec807aca10
+Author: Hojjat Azizi <hjtazzi@gmail.com>
+Date:   Sat Oct 25 21:09:23 2025 +0330
+
+    init
