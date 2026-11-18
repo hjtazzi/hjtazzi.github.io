@@ -16,10 +16,10 @@ const LanguagesSkills: TResumeData['skills'][0]['skills'] = [
 const BackendSkills: TResumeData['skills'][0]['skills'] = [
   { skill: "Node.js", score: 85 },
   { skill: "Express.js", score: 80 },
-  { skill: "Nest.js", score: 65 },
-  { skill: "REST API", score: 65 },
+  { skill: "Nest.js", score: 75 },
+  // { skill: "REST API", score: 65 },
   { skill: "Mongoose.js", score: 80 },
-  { skill: "WordPress", score: 85 },
+  { skill: "WordPress", score: 90 },
 ];
 const DatabasesSkills: TResumeData['skills'][0]['skills'] = [
   { skill: "MongoDB", score: 80 },
@@ -66,7 +66,7 @@ export const ResumeData: Record<AppState["language"], TResumeData> = {
           details: `\nDuring this period, I worked on projects involving large datasets and complex processing flows, which required precise data-flow control, query optimization, efficient API design, and the implementation of stable architectures for both backend and frontend layers. One of the key projects involved a complete refactor of the frontend, designing a new architecture from scratch, optimizing request handling, reducing database load, and developing new backend features. Extensive use of complex forms, architectural best practices, and the need for high responsiveness created valuable technical challenges.\n\nThese experiences strengthened my skills in areas such as requirement analysis, choosing the right architecture and technologies, refactoring legacy systems, collaborating effectively with other developers, and managing the full development lifecycle. The variety of projects and diverse client needs also played a significant role in deepening my experience in full-stack development and enhancing my understanding of system behavior.`,
         },
         startDate: { y: 2024, m: 12 },
-        endDate: "Present"
+        endDate: { y: 2026, m: 3 }
       },
       {
         title: "Full-Stack Developer",
@@ -117,11 +117,25 @@ export const ResumeData: Record<AppState["language"], TResumeData> = {
     ],
     education: [
       {
+        university: "University of Kashan",
+        field: "Computer Engineering – Software Engineering",
+        degree: "Master’s Degree (MS)",
+        startDate: { y: 2026, m: 10 },
+        endDate: 'Present'
+      },
+      {
         university: "Islamic Azad University",
         field: "Computer Software Engineering",
         degree: "Bachelor’s Degree (BS)",
-        startDate: { y: 2020, m: 10 },
+        startDate: { y: 2023, m: 2 },
         endDate: { y: 2025, m: 6 }
+      },
+      {
+        university: "Islamic Azad University",
+        field: "Computer Software Engineering",
+        degree: "Associate's Degree (AS)",
+        startDate: { y: 2020, m: 10 },
+        endDate: { y: 2023, m: 2 }
       }
     ],
   },
@@ -156,7 +170,7 @@ export const ResumeData: Record<AppState["language"], TResumeData> = {
           details: `\nدر این دوره روی پروژه‌هایی با داده‌های حجیم و ساختارهای پیچیده کار کردم که نیازمند کنترل دقیق جریان داده، بهینه‌سازی Queryها، طراحی APIهای کارآمد و پیاده‌سازی معماری پایدار برای بک‌اند و فرانت‌اند بودند. یکی از مهم‌ترین پروژه‌ها شامل ریفکتور کامل بخش فرانت‌اند، طراحی معماری جدید از صفر، بهینه‌سازی درخواست‌ها، کاهش بار دیتابیس و توسعه قابلیت‌های جدید در بک‌اند بود. استفاده گسترده از فرم‌ها، ضرورت استفاده از الگوهای معماری مناسب و نیاز به سرعت پاسخ‌گویی مناسب، چالش‌های فنی ارزشمندی ایجاد کرد.\n\nاین تجربه‌ها باعث شد در حوزه‌هایی مانند تحلیل نیاز، انتخاب معماری و تکنولوژی مناسب، Refactor سیستم‌های قدیمی، همکاری با توسعه‌دهندگان، مدیریت چرخه کامل توسعه مهارت بیشتری کسب کنم. تنوع پروژه‌ها و نیازهای مختلف مشتریان نیز نقش مهمی در عمیق‌تر شدن تجربه من در توسعه فول‌استک و درک بهتر رفتار سیستم‌ها داشت.`,
         },
         startDate: { y: 2024, m: 12 },
-        endDate: "Present"
+        endDate: { y: 2026, m: 3 }
       },
       {
         title: "توسعه‌دهنده فول استک",
@@ -207,11 +221,25 @@ export const ResumeData: Record<AppState["language"], TResumeData> = {
     ],
     education: [
       {
+        university: "دانشگاه کاشان",
+        field: "مهندسی کامپیوتر - گرایش نرم‌افزار",
+        degree: "کارشناسی ارشد",
+        startDate: { y: 2026, m: 10 },
+        endDate: 'Present'
+      },
+      {
         university: "دانشگاه آزاد اسلامی",
         field: "مهندسی نرم‌افزار کامپیوتر",
         degree: "کارشناسی",
-        startDate: { y: 2020, m: 10 },
+        startDate: { y: 2023, m: 2 },
         endDate: { y: 2025, m: 6 }
+      },
+      {
+        university: "دانشگاه آزاد اسلامی",
+        field: "مهندسی نرم‌افزار کامپیوتر",
+        degree: "کاردانی",
+        startDate: { y: 2020, m: 10 },
+        endDate: { y: 2023, m: 2 }
       }
     ],
   }

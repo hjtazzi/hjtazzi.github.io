@@ -14,7 +14,7 @@ const ErrorBoundary = ({ children }: ErrorBoundary) => {
   return (
     <ErrorBoundaries
       FallbackComponent={() => <MainLayout><ErrorFallback /></MainLayout>}
-      onError={(error: Error) => console.error('Error caught:', error)}
+      onError={(error, info) => console.error('Error caught:', error, info)}
     >
       {children}
     </ErrorBoundaries>

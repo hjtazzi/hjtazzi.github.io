@@ -27,7 +27,7 @@ const MetaInfo = () => {
       const { years, months } = calcDateRange(mergeDateIntervals(ranges));
 
       setTotalExp({ years, months });
-      setAge(diffDate(new Date(Date.UTC(birthdate.y, birthdate.m - 1, birthdate.d)), currentDate).years);
+      setAge(diffDate(new Date(Date.UTC(birthdate.y, birthdate.m - 1, birthdate.d)), currentDate).years + 1);
     }
 
     return () => {

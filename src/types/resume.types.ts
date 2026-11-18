@@ -47,8 +47,8 @@ export type TResumeData = {
   education: {
     university: string;
     degree:
-    | "High School Diploma" | "Associate Degree (AS)" | "Bachelor’s Degree (BS)" | "Master’s Degree (MS)"
-    | "دیپلم" | "فوق‌دیپلم" | "کارشناسی" | "کارشناسی ارشد";
+    | "High School Diploma" | "Associate's Degree (AS)" | "Bachelor’s Degree (BS)" | "Master’s Degree (MS)"
+    | "دیپلم" | "کاردانی" | "کارشناسی" | "کارشناسی ارشد";
     field: string;
     startDate: TDate;
     endDate: TDate | "Present";

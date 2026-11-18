@@ -14,6 +14,7 @@ import Skills from '../components/pages/about/Skills';
 import Education from '../components/pages/about/Education';
 
 import profileImage from '../assets/imgs/profile.webp';
+import DownloadCV from '../components/pages/about/DownloadCV';
 
 
 const sidebarItems: TSidebarItem[] = [
@@ -119,6 +120,7 @@ const About = () => {
             <WorkExperience id={sidebarItems[1].key} scrollContainerRef={containerRef} />
             <Skills id={sidebarItems[2].key} />
             <Education id={sidebarItems[3].key} />
+            <DownloadCV />
           </HeroSection>
         </div>
       </div>

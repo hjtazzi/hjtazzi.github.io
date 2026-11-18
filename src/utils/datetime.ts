@@ -6,14 +6,28 @@ import type { TDate, TDateRange } from "../types";
 
 const FA_MONTHS = ["فروردین", "اردیبهشت", "خرداد", "تیر", "مرداد", "شهریور", "مهر", "آبان", "آذر", "دی", "بهمن", "اسفند",];
 
-const API_PRIMARY = (key: string) => `https://api.timezonedb.com/v2.1/get-time-zone?key=${key}&format=json&by=zone&zone=UTC`;
+const API_PRIVATE = "https://commit-f.site/api/json/v1/datetime";
+const API_PRIMARY = (key: string) => `https://api.timezonedb.com/v2.1/get-time-zone?key=${key}` +
+  `&format=json&by=zone&zone=${encodeURIComponent("Europe/London")}`;
 const API_SECOND = "https://timeapi.io/api/Time/current/zone?timeZone=UTC";
 const API_THIRD = "https://aisenseapi.com/services/v1/datetime";
 
 
 export const getAccurateNow = async (): Promise<Date> => {
   try {
-    const res = await axios.get(API_PRIMARY("RV8CEOJVU2T6"), { timeout: 5000 });
+    const res = await axios.get(API_PRIVATE, { timeout: 2000 });
+
+    if (res.data?.utc) {
+      const { utc } = res.data;
+      const date = new Date(utc);
+
+      localStorage.setItem("lastValidDate", date.toISOString());
+      return date;
+    }
+  } catch (_) { }
+
+  try {
+    const res = await axios.get(API_PRIMARY("RV8CEOJVU2T6"), { timeout: 2000 });
 
     if (res.data?.formatted) {
       const { formatted } = res.data;
@@ -25,7 +39,7 @@ export const getAccurateNow = async (): Promise<Date> => {
   } catch (_) { }
 
   try {
-    const res = await axios.get(API_SECOND, { timeout: 3000 });
+    const res = await axios.get(API_SECOND, { timeout: 1500 });
 
     if (res.data?.dateTime) {
       const { dateTime } = res.data;
@@ -37,7 +51,7 @@ export const getAccurateNow = async (): Promise<Date> => {
   } catch (_) { }
 
   try {
-    const res = await axios.get(API_THIRD, { timeout: 3000 });
+    const res = await axios.get(API_THIRD, { timeout: 1500 });
 
     if (res.data?.datetime) {
       const { datetime } = res.data;
